@@ -1,0 +1,23 @@
+#!/usr/bin/perl -w
+
+use strict;
+use Text::CSV_XS;
+
+for my $year (1848 .. 1859) {
+    
+    # Read/parse CSV
+    
+    my $csv = Text::CSV_XS->new ({ binary => 1, auto_diag => 1 });
+    open my $fh,  "<artikler_$year.csv"  or die "artikler_$year.csv: $!";
+
+    while ( my $line = <$fh> ) {
+	$csv->parse($line);
+	my @fields = $csv->fields();
+	$fields[1] =~ m/^$year.*/ or next;
+	print $fields[1] . "\t" . $fields[4] . "\n";
+    }
+    close $fh;
+ 
+    
+}
+

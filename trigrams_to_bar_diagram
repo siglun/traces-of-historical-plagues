@@ -1,0 +1,57 @@
+#!/usr/bin/perl
+
+ # -w
+
+# use strict;
+
+# open(my $pipe,"ls trigrams/*.text | sort -k 1.10 -n |");
+open(my $pipe,"ls bigrams/*.text | sort -k 1.9 -n |");
+
+# print ".nr PL 59.4c\n";
+# print ".nr LL 38.0c\n";
+# print ".nr PL 29.4c\n";
+# print ".nr LL 16.0c\n";
+# print ".nr HM 2c\n";
+# print ".nr FM 2c\n";
+# print ".nr PO 1c\n";
+
+my $prev_lab = 'Week0';
+my $counter  = 0;
+while(my $file_name = <$pipe>) {
+    chomp $file_name;
+    my $week = $file_name;
+    $week =~ s/^.*\///;
+    $week =~ s/.text//;
+    next if $week < 275;
+    last if $week >= 375;
+    my $cur_lab = "Week$week";
+    if($counter == 0) {
+	print ".PS\n";
+	print "scale=2.54\n";
+	print ".po 1.0c\n";
+	print ".ps 5\n";
+	print ".vs 10\n";
+	print 'Y: arrow up 23' . "\n";
+	print 'box invis "Bigrammes" rjust with .sw at Y.n' . "\n";
+	print 'X: arrow right 16 from Y.s' . "\n";
+	print 'box invis "Weeks" with .ne at X.e' . "\n";
+	print 'Week0:box invis " " with .n at X.sw'."\n";
+	$prev_lab = "Week0";
+    }
+    $counter++;
+
+    chomp $file_name;
+    
+    print $cur_lab . ':box invis "'.$week.'" wid 1.8 with .sw at ' . $prev_lab  . ".se\n";
+	
+    print "\tcopy \"" . $file_name . '" thru { box invis "$1 $2 $3" ht 0.45   with .s at last box .n}' ."\n";
+
+    $prev_lab = $cur_lab;
+    if($counter == 8) {
+	print ".PE\n";
+	$counter=0;
+    }
+
+}
+print ".PE\n";
+

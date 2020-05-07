@@ -1,0 +1,91 @@
+#!/usr/bin/perl -w
+
+use strict;
+
+my $tr_cmd = ""; #"perl -pe 's/([^[:space:][:alpha:]])+/\n/g'";
+my $year_seq = 0;
+
+my $text_lengths_file = "text_lengths.text";
+open my $text_lengths_fh,">$text_lengths_file";
+for my $year (1848 .. 1859) {
+    
+    # Read/parse CSV
+
+    open my $fh,  "<artikler_$year.csv"  or die "artikler_$year.csv: $!";
+
+    while ( my $line = <$fh> ) {
+	chomp $line;
+	$line =~ m/,/ or next ;
+	
+	my @fields = ();
+
+	if(@fields = split(/\",\"/,$line,5)) {
+
+	    my $yyyy;
+	    my $mm;
+	    my $dd;
+	    my $date = $fields[1];
+	    
+	    if( ($yyyy,$mm,$dd) = split(/-/,$fields[1],3)) {
+
+		next unless $yyyy && $mm && $dd;
+
+		
+		my $this_week = $year_seq*52 + int(1 + (&days($mm) + $dd)/ 7);
+
+		my $text_file = "weekly/" . $this_week . ".text";
+		
+		print $fields[1] . " " . $text_file . "\n";
+
+		my $contains = $fields[4] =~ m/(cholera)|(kolera)|(epidemi)/i ? 1 : 0;
+		print $text_lengths_fh "$this_week\t" . length($fields[4]) . "\t$contains\n";
+
+
+		
+		if(open( my $text_fh,  ">>$text_file")) {
+		    my $txt = $fields[4];
+		    $txt = lc($txt);
+		    $txt =~ s/[[:punct:]]+/ /g;
+		    $txt =~ s/\s+/\n/g;
+		    print $text_fh "$txt\n";
+		} else {
+		    die "$text_file: $!";
+		}
+
+	    }
+
+	}
+    }
+    close $fh;
+ 
+    $year_seq++;
+}
+
+sub days {
+    my $month = shift;
+
+    my @months = ('01','02','03','04','05','06','07','08','09','10','11','12');
+
+    my $days = 0;
+    foreach my $m (@months) {
+	if($month gt $m) {
+	    $days = $days + &days_per_month($m);
+	} else {
+	    return $days;
+	}
+    }
+    
+}
+
+sub days_per_month {
+    my $month = shift;
+
+    if($month eq '02') {
+	return 28;
+    } elsif($month =~ m/(01)|(03)|(05)|(07)|(08)|(10)|(12)/) {
+	return 31;
+    } else {
+	return 30;
+    }
+    
+}

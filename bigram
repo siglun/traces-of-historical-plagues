@@ -1,0 +1,14 @@
+#!/usr/bin/perl -w
+
+use strict;
+
+my @words = ();
+
+while(my $w = <>) {
+    chomp $w;
+    push @words,$w;
+}
+
+for(my $i=0;$i+2<$#words;$i++) {
+    print "$words[$i] $words[$i+1]\n";
+}
