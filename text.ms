@@ -23,7 +23,7 @@ https://da.wikipedia.org/wiki/Koleraepidemien_i_K%C3%B8benhavn_1853
 .PSPIC "articles_by_year.eps"  12c 
 Figure 1. Number of newspaper pages mentioning any of the words \fIkolera, cholera, epidemi\fP or \fIpest\fP.
 .LP
-The spread of an infectious disease does not occur in a vacuum; the Copenhagen epidemic is a part of the cholera pandemic (1846-1860)
+The spread of an infectious disease does not occur in a vacuum; the Copenhagen epidemic is a part of the cholera pandemic (1846-1860)\**
 .FS
 https://en.wikipedia.org/wiki/1846%E2%80%931860_cholera_pandemic
 .FE
