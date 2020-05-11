@@ -50,7 +50,6 @@ Using the Unix \f(CRgrep\fP command makes it easy to count the number of pages c
 So the graph in Figure 1, is simple plot of what is extracted using the shell script in Figure 2.
 .ID
 \f(CR#!/bin/sh
-
 echo "#year kolera cholera epidemi pest farsot" 
 for file in artikler*
 do

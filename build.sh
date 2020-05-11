@@ -1,6 +1,7 @@
 #!/bin/sh
 
- gnuplot < plot.gp
+gnuplot < plot.gp
+gnuplot < plot_weekly.gp
 
 # ./make_trigrams.sh
 ./trigrams_to_bar_diagram > dia.ms
