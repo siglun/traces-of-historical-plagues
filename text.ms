@@ -32,7 +32,7 @@ which is the third out of seven global outbreaks.\**
 https://en.wikipedia.org/wiki/Cholera_outbreaks_and_pandemics
 .FE
 .PP
-Here I present some data analyses: (1) The number of newspaper articles mentioning \fIepidemi, pest, kolera\fP and \fIcholera\fP through the decade 1849 to 1859 (Figure 1).
+Here I present some data analyses: (1) The number of newspaper articles mentioning \fIepidemi, pest, kolera\fP and \fIcholera\fP through the period 1846 to 1860 (Figure 1).
 (2) I repeated that analysis with the frequencies of words rather than articles in weekly aggregations of texts.
 (3) Finally I visualize a set of bigrams extracted from the corpus.
 .SH
