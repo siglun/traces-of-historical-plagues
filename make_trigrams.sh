@@ -10,4 +10,4 @@ done
 
 #    ./bigram  $file  | egrep '(epidemi)|(kolera)|(cholera)' | egrep -v '[[:punct:][:digit:]]+' | iconv -tISO-8859-1 -fUTF-8  | sort -d | uniq -c | sort -nr | head -50 | sort -n >  "./bigrams/$week.text"
 
-done    
+#done    
