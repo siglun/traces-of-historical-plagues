@@ -7,6 +7,7 @@ URIs=(
     "https://loar.kb.dk/bitstream/handle/1902/282/artikler_1849.csv"
     "https://loar.kb.dk/bitstream/handle/1902/284/artikler_1850.csv"
     "https://loar.kb.dk/bitstream/handle/1902/285/artikler_1851.csv"
+    "https://loar.kb.dk/bitstream/handle/1902/286/artikler_1852.csv"
     "https://loar.kb.dk/bitstream/handle/1902/287/artikler_1853.csv"
     "https://loar.kb.dk/bitstream/handle/1902/288/artikler_1854.csv"
     "https://loar.kb.dk/bitstream/handle/1902/289/artikler_1855.csv"
