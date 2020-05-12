@@ -7,7 +7,7 @@ my $year_seq = 0;
 
 my $text_lengths_file = "text_lengths.text";
 open my $text_lengths_fh,">$text_lengths_file";
-for my $year (1848 .. 1859) {
+for my $year (1846 .. 1860) {
     
     # Read/parse CSV
 
