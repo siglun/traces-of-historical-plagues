@@ -2,7 +2,7 @@
 
 use strict;
 
-if(open(my $pipe,"grep -P '[0123456789]\s((ch)|(k))olera\si\s' trigrams/* | sort -n -k1.10|")) {
+if(open(my $pipe,'grep -aP \'[0123456789]\s((ch)|(k))olera\si\s\' trigrams/* | sort -n -k1.10|')) {
     while(my $line = <$pipe>) {
 	print $line;
     }
