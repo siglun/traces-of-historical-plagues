@@ -14,11 +14,28 @@ retrieved by the script GET.sh. Run it as
 
 which will lead to the download of artikler_1846.csv ... artikler_1860.csv
 
+The three scripts
+
 ```
+parse_article_files
 count_words.sh 
 count_words_weekly.sh 
 ```
-Extracts data for Figure 1 and Figure 2. Finally build the paper using the command
+Tokenizes and aggregates text in text files in the weekly directory. 
+Extracts data for Figure 1 and Figure 2.
+
+```
+make_trigrams.sh
+```
+
+Makes bigrams and trigrams for weekly extracts in the directories with the same names
+
+```
+make_n-gram_extracts.sh
+```
+
+Make extracts with the fifty most frequent bigrams, writing them in the bigrams directory with the suffic .extract.
+Finally build the paper using the command
 
 ```
 build.sh
