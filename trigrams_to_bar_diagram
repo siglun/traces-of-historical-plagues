@@ -5,7 +5,7 @@
 # use strict;
 
 # open(my $pipe,"ls trigrams/*.text | sort -k 1.10 -n |");
-open(my $pipe,"ls bigrams/*.text | sort -k 1.9 -n |");
+open(my $pipe,"ls bigrams/*.extract | sort -k 1.9 -n |");
 
 # print ".nr PL 59.4c\n";
 # print ".nr LL 38.0c\n";
@@ -21,9 +21,9 @@ while(my $file_name = <$pipe>) {
     chomp $file_name;
     my $week = $file_name;
     $week =~ s/^.*\///;
-    $week =~ s/.text//;
+    $week =~ s/.extract//;
     next if $week < 385;
-    last if $week >= 425;
+    last if $week >= 435;
     my $cur_lab = "Week$week";
     if($counter == 0) {
 	print ".PS\n";
