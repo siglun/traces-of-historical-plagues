@@ -22,8 +22,8 @@ while(my $file_name = <$pipe>) {
     my $week = $file_name;
     $week =~ s/^.*\///;
     $week =~ s/.text//;
-    next if $week < 275;
-    last if $week >= 375;
+    next if $week < 385;
+    last if $week >= 425;
     my $cur_lab = "Week$week";
     if($counter == 0) {
 	print ".PS\n";
