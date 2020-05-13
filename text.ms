@@ -74,10 +74,10 @@ That is based on the fact that the article count in Figure 1 never really decrea
 (4) The word \fIpest\fP seems to be more widely used in Danish at the time, possibly as something annoying but also as epidemic disease in general.
 .PP
 I also made another analysis, where I aggregated text by week, and used text tokenized by word, see Figure 3.
-The week numbering starts with 1 at 1849-01-01 and ends at 1859-12-30 with week 625.
-The huge peak in the graph starts at 1853-06-24 at week 286.
-It reaches its highest point at the end of July, 1853-07-29, week 291.
-From what I can tell it continues until the beginning of October, but the mentions of \fIcholera\fP in the corpus is higher than the pre-outbreak into March the following year, week 324.
+The week numbering starts with 1 at 1846-01-01 and ends at 1860-12-31 with week 781.
+The huge peak in the graph starts at 1853-06-24 at week 389.
+It reaches its highest point at the end of July, 1853-07-29, week 395.
+From what I can tell it continues until the beginning of October, but the mentions of \fIcholera\fP in the corpus is higher than the pre-outbreak into March the following year, week 425.
 There is a discrepancy between the two analyses,
 in that the article level analyses (Figure 1) implies a longer effect of the outbreak on the discourse than the per word one (Figure 3.)
 .IP
@@ -131,7 +131,7 @@ cholera ere berovede\fP
 .LP
 The rest of this paper consists of a visualization of bigrams containing any of the words \fIepidemi, kolera\fP or \fIcholera\fP.
 The bigrams are shown as bars in a set of bar diagrams, one diagram per eight weeks interval.
-It comprises 100 weeks from 1853-04-08 (my week 275) to 1855-03-17 (my week 375).
+It comprises about a year, from 1853-05-27 (my week 386) to 1854-05-06 (my week 435).
 When the epidemics is worst, the number of bigrams is so high that I decided to \fBtake only the 50 most frequent ones\fP,
 or the text would not be readable.
 Then all the bars are of equal length, obviously.
