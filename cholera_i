@@ -8,8 +8,13 @@ if(open(my $pipe,'grep -aP \'[0123456789]\s((ch)|(k))olera\si\s\' trigrams/* | s
 	chomp $line;
 	$line =~ m/^trigrams\/(\d+).text:.*/;
 	my $week = $1;
-	$line =~s/^.+olera\s+i\s+//;
-	print "$week\t$line\n";
+	my $third_word = $line;
+	if($third_word =~s/^.+olera\s+i\s+//) {
+	    my $year = `grep $week\.text year_by_weekly.text`;
+	    chomp $year;
+	    $year =~ s/\sweek.*$//;
+	    print "$year\t$third_word\n" unless $year =~ m/weekly/;
+	}
     }
 } else {
     die "Cannot open $pipe: $!";
