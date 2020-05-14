@@ -1,7 +1,7 @@
 #!/usr/bin/perl -w
 
 use strict;
-
+system("rm yearly/*.text");
 if(open(my $pipe,'grep -aP \'[0123456789]\s((ch)|(k))olera\si\s\' trigrams/* | sort -n -k1.10|')) {
     while(my $line = <$pipe>) {
 #	print $line;
@@ -13,7 +13,13 @@ if(open(my $pipe,'grep -aP \'[0123456789]\s((ch)|(k))olera\si\s\' trigrams/* | s
 	    my $year = `grep $week\.text year_by_weekly.text`;
 	    chomp $year;
 	    $year =~ s/\sweek.*$//;
-	    print "$year\t$third_word\n" unless $year =~ m/weekly/;
+	    next if $year =~ m/weekly/;
+	    if(open(my $olera,">>./yearly/$year".'.text')) {
+		print $olera "$third_word\n";
+		close $olera;
+	    } else {
+		print STDERR 
+	    }
 	}
     }
 } else {
