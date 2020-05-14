@@ -4,7 +4,12 @@ use strict;
 
 if(open(my $pipe,'grep -aP \'[0123456789]\s((ch)|(k))olera\si\s\' trigrams/* | sort -n -k1.10|')) {
     while(my $line = <$pipe>) {
-	print $line;
+#	print $line;
+	chomp $line;
+	$line =~ m/^trigrams\/(\d+).text:.*/;
+	my $week = $1;
+	$line =~s/^.+olera\s+i\s+//;
+	print "$week\t$line\n";
     }
 } else {
     die "Cannot open $pipe: $!";
