@@ -15,13 +15,39 @@ At the time, Copenhagen had around 130.000\**
 http://www2.kb.dk/udstillinger/medhist/kolera/koebenhavn1853.htm
 .FE
 inhabitants out of which 7.219 were diagnosed as having the disease out of which 4.737 (56,7%) died.
+Christian Molbech writes in a letter to Christian Knud Frederik Molbech, the July 3, 1853:
+.QP
+.ig
+Allerede den 12te Juni (altsaa Dagen før Rigsdagen aabnedes, den
+uheldige 13de Dag i Juni) indtraf det 1ste Cholera-Tilfælde \(em et ungt
+Menneske af Holmens Nyboders Folk, som længere Tid havde arbeidet paa
+en Mudderpram. Han kom sig, og blev allerede den 25de udskrevet af
+Hospitalet. I hele 14 Dage var man i Stand til at dølge de meget
+sparsomme Sygdomstilfælde.
+..
+.ps 10
+.vs 12
+The first cholera case was found as early as the 12th Juni (i.e., the
+day before the opening of the parliament in June) \(em a young man
+from the area close to the naval baracks, who for quite some time had
+worked on a dredge. He has recovered, and was released from hospital
+the 25th. The authorities were able to conceal the earliest few cases
+for a fortnight.\**
+.FS
+Translated by the author.
+https://bit.ly/3cOzlAg
+.\" https://danmarksbreve.kb.dk/catalog/%2Fletter_books%2F001991706%2F001991706_000-L0019917060000027
+.FE
+.IP
+.PSPIC "articles_by_year.eps"  12c
+.ps 10
+.vs 12
+Figure 1. Number of newspaper pages mentioning any of the words \fIkolera, cholera, epidemi\fP or \fIpest\fP.
+.LP
 The epidemic spread from Copenhagen to other areas. Outside the capital 1.951 fatal cases were reported.\**
 .FS
 https://da.wikipedia.org/wiki/Koleraepidemien_i_K%C3%B8benhavn_1853
 .FE
-.IP
-.PSPIC "articles_by_year.eps"  12c 
-Figure 1. Number of newspaper pages mentioning any of the words \fIkolera, cholera, epidemi\fP or \fIpest\fP.
 .LP
 The spread of an infectious disease does not occur in a vacuum; the Copenhagen epidemic is a part of the cholera pandemic (1846-1860)\**
 .FS
@@ -63,6 +89,8 @@ do
 done\fP
 .DE
 .IP
+.ps 10
+.vs 12
 Figure 2. Script for extracting the data for plotting Figure 1
 .LP
 Three things spring to my mind:
@@ -81,7 +109,9 @@ From what I can tell it continues until the beginning of October, but the mentio
 There is a discrepancy between the two analyses,
 in that the article level analyses (Figure 1) implies a longer effect of the outbreak on the discourse than the per word one (Figure 3.)
 .IP
-.PSPIC "words_by_week.eps"  12c 
+.PSPIC "words_by_week.eps"  12c
+.ps 10
+.vs 12
 Figure 3. Here I use tokenized text, i.e., there is only one word per line, and I also aggregated the texts by week.
 .SH
 Bigrams and trigrams
@@ -108,8 +138,7 @@ choleraepidemien i hovedstaden
 epidemien i hovedstaden
 hovedstaden udbrudte cholera\fP
 .DE
-For some reason, I don't understand why, the actual name Copenhagen, København (or whatever spelling) are rarely used.
-Only the word hovedstaden is frequent.
+For some reason, I don't understand why, the actual name of the city Copenhagen, København (or whatever spelling) seem to occur rarely in comparison with the word hovedstaden, which is frequent, in particular 1853.
 Here is another sequence (containing \fIcholera er\fP) and sampled such that they begin with that phrase:
 .ID
 \f(CRcholera er af
@@ -129,7 +158,14 @@ cholera ere altsaa
 cholera ere berovede\fP
 .DE
 .LP
-The rest of this paper consists of a visualization of bigrams containing any of the words \fIepidemi, kolera\fP or \fIcholera\fP.
+The rest of this paper consists of a visualizations
+.IP 1.
+of the third word in trigrams starting with \fIkolera\fP or \fIcholera i\fP.
+The third word is more often than not a place name.
+Repetitions are excluded, so the heights of the bars are more measures of diversity rather than abundance.
+.IP 2.
+of bigrams containing any of the words \fIepidemi, kolera\fP or \fIcholera\fP.
+.LP
 The bigrams are shown as bars in a set of bar diagrams, one diagram per eight weeks interval.
 It comprises about a year, from 1853-05-27 (my week 386) to 1854-05-06 (my week 435).
 When the epidemics is worst, the number of bigrams is so high that I decided to \fBtake only the 50 most frequent ones\fP,
