@@ -27,7 +27,7 @@ sparsomme Sygdomstilfælde.
 ..
 .ps 10
 .vs 12
-The first cholera case was found as early as the 12th Juni (i.e., the
+The first cholera case was found as early as the 12th June (i.e., the
 day before the opening of the parliament in June) \(em a young man
 from the area close to the naval baracks, who for quite some time had
 worked on a dredge. He has recovered, and was released from hospital
