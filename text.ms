@@ -1,5 +1,9 @@
 .TL
-The Copenhagen cholera epidemics 1853 in contemporary Danish newspaper prose
+.hy 0
+.nf
+The Copenhagen cholera epidemics 1853 in contemporary
+Danish newspaper prose:
+Some back-of-an-envelope calculations
 .AU
 Sigfrid Lundberg
 .AI
