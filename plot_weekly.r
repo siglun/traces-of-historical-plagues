@@ -11,5 +11,12 @@ series <- read.table(file = "weekly_counts.txt",
                      fill = TRUE,
                      comment.char = "#")
 
+pdf( "weekly_mentions.pdf", width = 7, height = 5 )
 
-plot(x = series$week,series$olera)
+# cairo_ps("image.eps")
+
+plot(x = series$week,
+     y = series$olera,
+     type = "l",
+     ylab = "Occurence in corpus",
+     xlab = "Week")
