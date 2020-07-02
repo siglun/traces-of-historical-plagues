@@ -2,6 +2,7 @@
 
 
 # week olera kolera cholera epidemi pest farsot
+# olera is the some of kolera and cholera
 
 series <- read.table(file = "weekly_counts.txt",
                      col.names = c("week","olera","kolera","cholera","epidemi","pest","farsot"),
