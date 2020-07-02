@@ -167,6 +167,7 @@ The rest of this paper consists of a visualizations
 of the third word in trigrams starting with \fIkolera\fP or \fIcholera i\fP.
 The third word is more often than not a place name.
 Repetitions are excluded, so the heights of the bars are more measures of diversity rather than abundance.
+See Figure 4.
 .IP 2.
 of bigrams containing any of the words \fIepidemi, kolera\fP or \fIcholera\fP.
 .LP
@@ -187,7 +188,17 @@ The bars look somewhat like this, the number is the absolute frequency of the fo
  9 sidste epidemi
  9 kolera i
  9 kolera d
-.DE 
+.DE
+.DS L
+.so cholera.ms
+.br
+.ps 10
+.vs 12
+Figure 4.
+Trigrams per year with the text begining with \f(CRcholera i\fP.
+The highest bar is slightly massaged.
+I removed repetions and incomprehensible OCR errors in order to make it fit into the page.
+.DE
 .SH 
 Lessons learned
 .IP 1
