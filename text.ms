@@ -52,7 +52,7 @@ The epidemic spread from Copenhagen to other areas. Outside the capital 1.951 fa
 .FS
 https://da.wikipedia.org/wiki/Koleraepidemien_i_K%C3%B8benhavn_1853
 .FE
-.LP
+.PP
 The spread of an infectious disease does not occur in a vacuum; the Copenhagen epidemic is a part of the cholera pandemic (1846-1860)\**
 .FS
 https://en.wikipedia.org/wiki/1846%E2%80%931860_cholera_pandemic
