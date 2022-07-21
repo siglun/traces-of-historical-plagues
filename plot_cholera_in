@@ -2,7 +2,7 @@
 
 open(my $pipe,"ls yearly/*.text | sort -n |");
 
-print ".PS\n";
+print ".PS L\n";
 
 my $prev_lab = 'Week0';
 my $counter  = 0;
@@ -16,7 +16,7 @@ while(my $file_name = <$pipe>) {
     my $cur_lab = "Week$week";
     if($counter == 0) {
 	print "scale=3.0\n";
-	print ".po 1.0c\n";
+	print ".po 0.0c\n";
 	print ".ps 5\n";
 	print ".vs 10\n";
 	print 'Y: arrow up 20' . "\n";
@@ -29,7 +29,7 @@ while(my $file_name = <$pipe>) {
     $counter++;
 
     print $cur_lab . ':box invis "'.$week.'" wid 1.5 with .sw at ' . $prev_lab  . ".se\n";
-    print "sh { sort $file_name | uniq -c | sort -n > " . $file_name . "_shit" . "}\n";
+    print "sh { sort $file_name | uniq -c | sort -n | tail -40 | perl -ne 's/^\\s+\\d\\s+//;print;'  > " . $file_name . "_shit" . "}\n";
     print "\tcopy \"" . $file_name . "_shit" . '" thru { box invis "$1 $2 $3" ht 0.45   with .s at last box .n}' ."\n";
 
     $prev_lab = $cur_lab;

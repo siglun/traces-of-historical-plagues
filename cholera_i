@@ -17,6 +17,7 @@ if(open(my $pipe,'grep -aP \'[0123456789]\s((ch)|(k))olera\s' . $preposition . '
 	    chomp $year;
 	    $year =~ s/\sweek.*$//;
 	    next if $year =~ m/weekly/;
+	    next if $year =~ m/1847|1859|1860/;
 	    if(open(my $olera,">>./yearly/$year".'.text')) {
 		print $olera "$third_word\n";
 		close $olera;
