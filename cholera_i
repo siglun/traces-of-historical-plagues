@@ -4,6 +4,8 @@ use strict;
 
 my $preposition = $ARGV[0] ? $ARGV[0] :  'i';
 
+my $dir = 'yearly' . ( $preposition ne 'i' ? $preposition : '');
+
 system("rm yearly/*.text");
 if(open(my $pipe,'grep -aP \'[0123456789]\s((ch)|(k))olera\s' . $preposition . '\s\' trigrams/* | sort -n -k1.10|')) {
     while(my $line = <$pipe>) {
@@ -18,7 +20,7 @@ if(open(my $pipe,'grep -aP \'[0123456789]\s((ch)|(k))olera\s' . $preposition . '
 	    $year =~ s/\sweek.*$//;
 	    next if $year =~ m/weekly/;
 	    next if $year =~ m/1847|1859|1860/;
-	    if(open(my $olera,">>./yearly/$year".'.text')) {
+	    if(open(my $olera,">>./$dir/$year".'.text')) {
 		print $olera "$third_word\n";
 		close $olera;
 	    } else {
