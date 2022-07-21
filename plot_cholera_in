@@ -29,8 +29,8 @@ while(my $file_name = <$pipe>) {
     $counter++;
 
     print $cur_lab . ':box invis "'.$week.'" wid 1.5 with .sw at ' . $prev_lab  . ".se\n";
-	
-    print "\tcopy \"" . $file_name . '" thru { box invis "$1 $2 $3" ht 0.45   with .s at last box .n}' ."\n";
+    print "sh { sort $file_name | uniq -c | sort -n > " . $file_name . "_shit" . "}\n";
+    print "\tcopy \"" . $file_name . "_shit" . '" thru { box invis "$1 $2 $3" ht 0.45   with .s at last box .n}' ."\n";
 
     $prev_lab = $cur_lab;
 

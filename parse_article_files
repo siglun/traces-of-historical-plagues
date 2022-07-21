@@ -47,6 +47,7 @@ for my $year (1846 .. 1860) {
 		    my $txt = $fields[4];
 		    $txt = lc($txt);
 		    $txt =~ s/[[:punct:]]+/ /g;
+		    $txt =~ s/[^\w]+/ /g;
 		    $txt =~ s/\s+/\n/g;
 		    print $text_fh "$txt\n";
 		} else {

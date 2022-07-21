@@ -1,15 +1,18 @@
 #!/usr/bin/perl -w
 
 use strict;
+
+my $preposition = $ARGV[0] ? $ARGV[0] :  'i';
+
 system("rm yearly/*.text");
-if(open(my $pipe,'grep -aP \'[0123456789]\s((ch)|(k))olera\si\s\' trigrams/* | sort -n -k1.10|')) {
+if(open(my $pipe,'grep -aP \'[0123456789]\s((ch)|(k))olera\s' . $preposition . '\s\' trigrams/* | sort -n -k1.10|')) {
     while(my $line = <$pipe>) {
 #	print $line;
 	chomp $line;
 	$line =~ m/^trigrams\/(\d+).text:.*/;
 	my $week = $1;
 	my $third_word = $line;
-	if($third_word =~s/^.+olera\s+i\s+//) {
+	if($third_word =~s/^.+olera\s+$preposition\s+//) {
 	    my $year = `grep $week\.text year_by_weekly.text`;
 	    chomp $year;
 	    $year =~ s/\sweek.*$//;
