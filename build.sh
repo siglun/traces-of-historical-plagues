@@ -1,6 +1,9 @@
 #!/bin/sh
 
 ./cholera_i
+./cholera_i er
+./cholera_i har
+./cholera_i havde
 
 gnuplot < plot.gp
 gnuplot < plot_weekly.gp
