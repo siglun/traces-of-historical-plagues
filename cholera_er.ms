@@ -38,4 +38,7 @@ sh { sort yearlyer/1856.text | uniq -c | sort -n | tail -45 |perl -ne 's/^\s+\d\
 Week1857:box invis "1857" wid 1.5 with .sw at Week1856.se
 sh { sort yearlyer/1857.text | uniq -c | sort -n | tail -45 |perl -ne 's/^\s+\d\s+//;print;'  > yearlyer/1857.text_shit}
 	copy "yearlyer/1857.text_shit" thru { box invis "$1 $2 $3" ht 0.45   with .s at last box .n}
+Week1858:box invis "1858" wid 1.5 with .sw at Week1857.se
+sh { sort yearlyer/1858.text | uniq -c | sort -n | tail -45 |perl -ne 's/^\s+\d\s+//;print;'  > yearlyer/1858.text_shit}
+	copy "yearlyer/1858.text_shit" thru { box invis "$1 $2 $3" ht 0.45   with .s at last box .n}
 .PE

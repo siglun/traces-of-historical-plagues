@@ -5,8 +5,14 @@ use strict;
 my $preposition = $ARGV[0] ? $ARGV[0] :  'i';
 
 my $dir = 'yearly' . ( $preposition ne 'i' ? $preposition : '');
+
 system("mkdir $dir");
 system("rm $dir/*.text*");
+
+for my $year (1848 .. 1858) {
+    system("touch ./$dir/$year\.text" );
+}
+
 if(open(my $pipe,'grep -aP \'[0123456789]\s((ch)|(k))olera\s' . $preposition . '\s\' trigrams/* | sort -n -k1.10|')) {
     while(my $line = <$pipe>) {
 #	print $line;
