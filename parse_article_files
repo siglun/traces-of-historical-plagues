@@ -7,7 +7,7 @@ my $year_seq = 0;
 
 my $text_lengths_file = "text_lengths.text";
 open my $text_lengths_fh,">$text_lengths_file";
-open my $week_by_date_fh,">text_dates.text";
+open my $week_by_date_fh,"| sort -u >text_dates.text";
 for my $year (1846 .. 1860) {
     
     # Read/parse CSV
