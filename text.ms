@@ -190,7 +190,37 @@ The bars look somewhat like this, the number is the absolute frequency of the fo
  9 kolera d
 .DE
 .DS L
-.so cholera.ms
+.so cholera_i.ms
+.br
+.ps 10
+.vs 12
+Figure 4.
+Trigrams per year with the text begining with \f(CRcholera i\fP.
+The highest bar is slightly massaged.
+I removed repetions and incomprehensible OCR errors in order to make it fit into the page.
+.DE
+.DS L
+.so cholera_er.ms
+.br
+.ps 10
+.vs 12
+Figure 4.
+Trigrams per year with the text begining with \f(CRcholera i\fP.
+The highest bar is slightly massaged.
+I removed repetions and incomprehensible OCR errors in order to make it fit into the page.
+.DE
+.DS L
+.so cholera_har.ms
+.br
+.ps 10
+.vs 12
+Figure 4.
+Trigrams per year with the text begining with \f(CRcholera i\fP.
+The highest bar is slightly massaged.
+I removed repetions and incomprehensible OCR errors in order to make it fit into the page.
+.DE
+.DS L
+.so cholera_havde.ms
 .br
 .ps 10
 .vs 12

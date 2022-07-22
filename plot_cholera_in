@@ -1,6 +1,12 @@
 #!/usr/bin/perl -w
 
-open(my $pipe,"ls yearly/*.text | sort -n |");
+my $preposition = $ARGV[0] ? $ARGV[0] :  'i';
+
+my $dir = $preposition =~ m/^i$/ ? '' : $preposition;
+
+print STDERR "using dir = $dir with preposition = $preposition  \n";
+
+open(my $pipe,"ls yearly" . $dir . "/*.text | sort -n |");
 
 print ".PS L\n";
 
@@ -20,7 +26,7 @@ while(my $file_name = <$pipe>) {
 	print ".ps 5\n";
 	print ".vs 10\n";
 	print 'Y: arrow up 20' . "\n";
-	print 'box invis "Cholera i" rjust with .sw at Y.n' . "\n";
+	print 'box invis "Words" rjust with .sw at Y.n' . "\n";
 	print 'X: arrow right 19 from Y.s' . "\n";
 	print 'box invis "Year" with .ne at X.e' . "\n";
 	print 'Week0:box invis " " with .n at X.se'."\n";
