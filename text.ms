@@ -204,7 +204,7 @@ I removed repetions and incomprehensible OCR errors in order to make it fit into
 .br
 .ps 10
 .vs 12
-Figure 4.
+Figure 5.
 Trigrams per year with the text begining with \f(CRcholera er\fP.
 The highest bar is slightly massaged.
 I removed repetions and incomprehensible OCR errors in order to make it fit into the page.
@@ -214,7 +214,7 @@ I removed repetions and incomprehensible OCR errors in order to make it fit into
 .br
 .ps 10
 .vs 12
-Figure 4.
+Figure 6.
 Trigrams per year with the text begining with \f(CRcholera har\fP.
 .DE
 .DS L
@@ -222,7 +222,7 @@ Trigrams per year with the text begining with \f(CRcholera har\fP.
 .br
 .ps 10
 .vs 12
-Figure 4.
+Figure 7.
 Trigrams per year with the text begining with \f(CRcholera havde\fP.
 .DE
 .SH 
