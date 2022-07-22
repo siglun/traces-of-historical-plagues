@@ -205,7 +205,7 @@ I removed repetions and incomprehensible OCR errors in order to make it fit into
 .ps 10
 .vs 12
 Figure 4.
-Trigrams per year with the text begining with \f(CRcholera i\fP.
+Trigrams per year with the text begining with \f(CRcholera er\fP.
 The highest bar is slightly massaged.
 I removed repetions and incomprehensible OCR errors in order to make it fit into the page.
 .DE
@@ -215,9 +215,7 @@ I removed repetions and incomprehensible OCR errors in order to make it fit into
 .ps 10
 .vs 12
 Figure 4.
-Trigrams per year with the text begining with \f(CRcholera i\fP.
-The highest bar is slightly massaged.
-I removed repetions and incomprehensible OCR errors in order to make it fit into the page.
+Trigrams per year with the text begining with \f(CRcholera har\fP.
 .DE
 .DS L
 .so cholera_havde.ms
@@ -225,9 +223,7 @@ I removed repetions and incomprehensible OCR errors in order to make it fit into
 .ps 10
 .vs 12
 Figure 4.
-Trigrams per year with the text begining with \f(CRcholera i\fP.
-The highest bar is slightly massaged.
-I removed repetions and incomprehensible OCR errors in order to make it fit into the page.
+Trigrams per year with the text begining with \f(CRcholera havde\fP.
 .DE
 .SH 
 Lessons learned
