@@ -7,14 +7,27 @@ Danish newspaper prose: Some back-of-an-envelope calculations
 Sigfrid Lundberg
 .AI
 The Royal Danish Library
+.AB
+.ps 10
+.vs 12
+A tentative analysis of how the cholera epidemic 1853 is covered in contemporary Danish newspapers.
+Words related to the epidemics increases rapidly in frequency at the outbreaks,
+but decreases much more slowly.
+Obviously the public was not prepared for the appearance,
+but the discussions of the outbreak continues several years after.
+The temporal distribution of trigrams containing locations (like \fIcholera \f(CRin\fI place name\fR ) and temporal info (like \fIcholera\fP \f(CRer\fP, \f(CRhar\fP or \f(CRhavde\fP, i.e., is, has and had followed by some word, often an adjective) follow the outbreak as well.
+.AE
 .SH
 Introduction
 .LP
-Inspired by the fact that we were all hiding away from the Covid-19 2020\(en2021 I wanted to take a closer look at some other epidemic.
-I started to write this May 2020 and completed it about two years later.
+Inspired by the fact that we were all hiding away from the Covid-19 2020 \(en 2021,
+I wanted to take a closer look at some other epidemic.
 My hope was to find patterns of change in language use mirroring sentiments and attitudes expressed in words, bigrams and trigrams and frequency distributions.
-My first impulse was to analyze the Spanish flu 1918 since my I have a personal relation to that outbreak,
-since my grandfather died in it which affected everything that followed in my family's history.
+I started to write this May 2020 and completed it about two years later. My original idea was to analyze the Spanish flu 1918 \(en 1919.\**
+.FS
+I have a personal relation to that outbreak.
+My grandfather died in it when my father was three years old and this affected everything that followed in my family's history.
+.FE
 We have as yet little freely available data in our public corpora from that period, so I turned my attention to the Cholera epidemic in Copenhagen 1853.
 At the time, Copenhagen had around 130.000\**
 .FS
@@ -76,8 +89,8 @@ Figure 1. Number of newspaper pages mentioning any of the words \fIkolera, chole
 .SH
 The data
 .LP
-The data was retrieved from Royal Danish Library's LOAR Repository.\** It comes in csv format, aggregated to yearly chunks.
-Each line is basically corresponding to one page of text in the newspaper.
+The data was retrieved from Royal Danish Library's LOAR Repository.\** It comes in \f(CRCSV\fP format, aggregated to yearly chunks.
+Each line is basically corresponding to one page of text in a newspaper.
 .FS
 Newspapers from Royal Danish Library
 .pdfhref W -D https://loar.kb.dk/handle/1902/157 https://loar.kb.dk/handle/1902/157
@@ -114,14 +127,14 @@ You see this on the shape of the curves;
 the incidence of words related to the epidemic rise rapidly from very low levels and then fade out slowly.
 The fact is that the article count in Figure 1 never really decreases to counts before the cholera outbreak.
 Almost certainly the people felt like we do in relation to the Covid-19 epidemic:
-Will it ever be the same again, and if it does, will we survive?
+Will it ever be the same again? If there will be new waves, will we survive?
 (3) People hadn't settled on how to spell the name of the disease yet, cholera and kolera.
 (4) The word \fIpest\fP seems to be widely used in Danish at the time,
 possibly as something annoying but also as epidemic disease in general.
 .PP
 I also made another analysis, where I aggregated text by week, and used text tokenized by word, see Figure 3.
 The week numbering starts with 1 at 1846-01-01 and ends at 1860-12-31 with week 781.
-The huge peak in the graph starts at 1853-06-24 at week 389.
+The huge peak in the graph starts at 1853-06-24 at week 389 (compare with the letter quoted above).
 It reaches its highest point at the end of July, 1853-07-29, week 395.
 From what I can tell it continues until the beginning of October, but the mentions of \fIcholera\fP in the corpus is higher than the pre-outbreak into March the following year, week 425.
 There is a discrepancy between the two analyses,
@@ -156,7 +169,7 @@ choleraepidemien i hovedstaden
 epidemien i hovedstaden
 hovedstaden udbrudte cholera\fP
 .DE
-For some reason, I don't understand why, the actual name of the city Copenhagen, København (or whatever spelling) seem to occur rarely in comparison with the word hovedstaden, which is frequent, in particular 1853.
+For some reason, I don't understand why, the actual name of the city Copenhagen, København (or whatever spelling) seem to occur rarely in comparison with the word hovedstaden (\(lqthe capital\(rq), which is frequent, in particular 1853.
 Here is another sequence (containing \fIcholera er\fP) and sampled such that they begin with that phrase:
 .ID
 \f(CRcholera er af
@@ -176,26 +189,27 @@ cholera ere altsaa
 cholera ere berovede\fP
 .DE
 .LP
-Figure 4-7 are of a visualizations of the frequencies of various trigrams.
+As you can see, our newspaper text corpora are not proofread. It is OCR from gothic script.
+Figure 4-7 are visualizations of the frequencies of various trigrams.
 .IP 1.
-Trigrams starting with \fIkolera i\fP or \fIcholera i\fP (\(lqkolera in\(rq or \(lqcholera in\(rq in English).
+Trigrams starting with \fIkolera i\fP or \fIcholera i\fP (\(lqcholera in\(rq in English).
 The third word is often a place name, such as \fIcholera i hovedstaden\fP (i.e., \(lqcholera in the capital\(rq).
 There are other constructs like \fIcholera i begyndelsen\fP (i.e., \(lqcholera in the beginning\(rq).
 Repetitions are excluded, so the heights of the bars are more measures of diversity rather than abundance.
 See Figure 4.
 .IP 2.
-Trigrams starting with \fIkolera er\fP or \fIcholera er\fP (\(lqkolera\(rq or \(lqcholera\(rq followed by \(lqis\(rq) in English).
+Trigrams starting with \fIkolera er\fP or \fIcholera er\fP (\(lqcholera\(rq followed by \(lqis\(rq) in English).
 These are constructs like \fIcholera er udbrudt\fP (\(lqcholera is broken out\(rq),
 \fIcholera er fra\fP (\(lqcholera is from\(rq) etc.
 See Figure 5.
 .IP 3.
-Trigrams starting with \fIkolera har\fP or \fIcholera har\fP (\(lqkolera\(rq or \(lqcholera\(rq followed by \(lqhas\(rq) in English).
+Trigrams starting with \fIkolera har\fP or \fIcholera har\fP (\(lqcholera\(rq followed by \(lqhas\(rq in English).
 The words following \fIhar\fP (i.e., \(lqhas\(rq) is similar to those follwing \(lqcholera is\(rq.
 After all they are both conjugations of the same verb \fIhave\fP;
 \(lqhas\(rq is still present tense just like \(lqis\(rq but the cholera has been going on for a while when using \(lqhas\(rq.
 For instance, we have \fIcholera har hersket\fP (\(lqcholera has ruled\(rq) as opposed to the \(lqcholera is broken out\(rq as mentioned in point 2 above. See Figure 6.
 .IP 4.
-Finally, trigrams starting with \fIkolera havde\fP or \fIcholera havde\fP (\(lqkolera\(rq or \(lqcholera\(rq followed by \(lqhad\(rq) in English).
+Finally, trigrams starting with \fIkolera havde\fP or \fIcholera havde\fP (\(lqcholera\(rq followed by \(lqhad\(rq) in English).
 One example is \fIcholera havde vist\fP, i.e., \(lqcholera had shown\(rq.
 There are only handful words following this past tense construct of the verb \fIhave\fP.
 They only appear in five of the ten years I have in my time series.
@@ -227,7 +241,7 @@ People were talking a lot about Cholera 1853 and many years thereafter, just as 
 Figure 4.
 Trigrams per year with the text beginning with \f(CRcholera i\fP.
 The highest bar is truncated, in reality it is ten times higher in order to make it fit into the page.
-I have also removed many repetions.
+I have also removed repetions.
 .bp
 .IP
 .\"DS L
@@ -237,8 +251,8 @@ I have also removed many repetions.
 .vs 12
 Figure 5.
 Trigrams per year with the text beginning with \f(CRcholera er\fP.
-The highest bar is truncated, in reality it is ten times higher in order to make it fit into the page.
-I have also removed many repetions.
+The highest bar is truncated in order to make it fit into the page.
+I have also removed repetions.
 .bp
 .IP
 .\"DS L
