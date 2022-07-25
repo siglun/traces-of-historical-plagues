@@ -35,7 +35,7 @@ sparsomme Sygdomstilfælde.
 .vs 12
 The first cholera case was found as early as the 12th June (i.e., the
 day before the opening of the parliament in June) \(em a young man
-from the area close to the naval baracks, who for quite some time had
+from the area close to the naval barracks, who for quite some time had
 worked on a dredge. He has recovered, and was released from hospital
 the 25th. The authorities were able to conceal the earliest few cases
 for a fortnight.\**
@@ -62,6 +62,12 @@ which is the third out of seven global outbreaks.\**
 Here I present some data analyses: (1) The number of newspaper articles mentioning \fIepidemi, pest, kolera\fP and \fIcholera\fP through the period 1846 to 1860 (Figure 1).
 (2) I repeated that analysis with the frequencies of words rather than articles in weekly aggregations of texts.
 (3) Finally I visualize a set of trigrams extracted from the corpus.
+.PP
+Everything you need to check or repeat or go further in these analyses is available on the Internet,
+including the scripts I have used in my calculations.\**
+.FS
+.pdfhref W -D https://github.com/siglun/traces-of-historical-plagues https://github.com/siglun/traces-of-historical-plagues
+.FE
 .IP
 .PDFPIC "articles_by_year.pdf"  12c
 .ps 10
@@ -98,7 +104,7 @@ done\fP
 .IP
 .ps 10
 .vs 12
-Figure 2. Script for extracting the data for plotting Figure 1
+Figure 2. Script for extracting the data for plotting Figure 1. See this paper's Github repository mentioned in the main text.
 .LP
 Three things spring to my mind:
 (1) The obvious one. People wrote about this cholera outbreak in Copenhagen 1853.
@@ -106,9 +112,9 @@ They wrote a lot.
 (2) The effect on the public discourse of the epidemic lasted for years and it did not return to pre-epidemic levels that decade.
 You see this on the shape of the curves;
 the incidence of words related to the epidemic rise rapidly from very low levels and then fade out slowly.
-The fact that the article count in Figure 1 never really decreases to counts before the cholera outbreak.
+The fact is that the article count in Figure 1 never really decreases to counts before the cholera outbreak.
 Almost certainly the people felt like we do in relation to the Covid-19 epidemic:
-Will it ever be the same again?
+Will it ever be the same again, and if it does, will we survive?
 (3) People hadn't settled on how to spell the name of the disease yet, cholera and kolera.
 (4) The word \fIpest\fP seems to be widely used in Danish at the time,
 possibly as something annoying but also as epidemic disease in general.
@@ -219,7 +225,7 @@ People were talking a lot about Cholera 1853 and many years thereafter, just as 
 .ps 10
 .vs 12
 Figure 4.
-Trigrams per year with the text begining with \f(CRcholera i\fP.
+Trigrams per year with the text beginning with \f(CRcholera i\fP.
 The highest bar is truncated, in reality it is ten times higher in order to make it fit into the page.
 I have also removed many repetions.
 .bp
@@ -230,7 +236,7 @@ I have also removed many repetions.
 .ps 10
 .vs 12
 Figure 5.
-Trigrams per year with the text begining with \f(CRcholera er\fP.
+Trigrams per year with the text beginning with \f(CRcholera er\fP.
 The highest bar is truncated, in reality it is ten times higher in order to make it fit into the page.
 I have also removed many repetions.
 .bp
@@ -241,7 +247,7 @@ I have also removed many repetions.
 .ps 10
 .vs 12
 Figure 6.
-Trigrams per year with the text begining with \f(CRcholera har\fP.
+Trigrams per year with the text beginning with \f(CRcholera har\fP.
 .bp
 .IP
 .\"DS L
@@ -250,7 +256,7 @@ Trigrams per year with the text begining with \f(CRcholera har\fP.
 .ps 10
 .vs 12
 Figure 7.
-Trigrams per year with the text begining with \f(CRcholera havde\fP.
+Trigrams per year with the text beginning with \f(CRcholera havde\fP.
 .bp
 .SH 
 Lessons learned
