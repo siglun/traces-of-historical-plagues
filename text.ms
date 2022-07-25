@@ -98,12 +98,17 @@ done\fP
 Figure 2. Script for extracting the data for plotting Figure 1
 .LP
 Three things spring to my mind:
-(1) The obvious one. People wrote about this cholera outbreak in Copenhagen 1853. They wrote a lot.
+(1) The obvious one. People wrote about this cholera outbreak in Copenhagen 1853.
+They wrote a lot.
 (2) The effect on the public discourse of the epidemic lasted for years and it did not return to pre-epidemic levels that decade.
-Almost certainly the people felt like we do: Will it ever be the same again?
-That is based on the fact that the article count in Figure 1 never really decreases to counts before the cholera outbrak.
+You see this on the shape of the curves;
+the incidence of words related to the epidemic rise rapidly from very low levels and then fade out slowly.
+The fact that the article count in Figure 1 never really decreases to counts before the cholera outbreak.
+Almost certainly the people felt like we do in relation to the Covid-19 epidemic:
+Will it ever be the same again?
 (3) People hadn't settled on how to spell the name of the disease yet, cholera and kolera.
-(4) The word \fIpest\fP seems to be more widely used in Danish at the time, possibly as something annoying but also as epidemic disease in general.
+(4) The word \fIpest\fP seems to be widely used in Danish at the time,
+possibly as something annoying but also as epidemic disease in general.
 .PP
 I also made another analysis, where I aggregated text by week, and used text tokenized by word, see Figure 3.
 The week numbering starts with 1 at 1846-01-01 and ends at 1860-12-31 with week 781.
@@ -162,33 +167,41 @@ cholera ere altsaa
 cholera ere berovede\fP
 .DE
 .LP
-The rest of this paper consists of a visualizations
+Figure 4-7 are of a visualizations of the frequencies of various trigrams.
 .IP 1.
-of the third word in trigrams starting with \fIkolera\fP or \fIcholera i\fP.
-The third word is more often than not a place name.
+Trigrams starting with \fIkolera i\fP or \fIcholera i\fP (\(lqkolera in\(rq or \(lqcholera in\(rq in English).
+The third word is often a place name, such as \fIcholera i hovedstaden\fP (i.e., \(lqcholera in the capital\(rq).
+There are other constructs like \fIcholera i begyndelsen\fP (i.e., \(lqcholera in the beginning\(rq).
 Repetitions are excluded, so the heights of the bars are more measures of diversity rather than abundance.
 See Figure 4.
 .IP 2.
-of bigrams containing any of the words \fIepidemi, kolera\fP or \fIcholera\fP.
-.LP
-The bigrams are shown as bars in a set of bar diagrams, one diagram per eight weeks interval.
-It comprises about a year, from 1853-05-27 (my week 386) to 1854-05-06 (my week 435).
-When the epidemics is worst, the number of bigrams is so high that I decided to \fBtake only the 50 most frequent ones\fP,
-or the text would not be readable.
-Then all the bars are of equal length, obviously.
-The bars look somewhat like this, the number is the absolute frequency of the following bigram that week.
-.ID
-\f(CR46 af cholera
-42 kolera den
-36 kolera ten
-36 a kolera
-23 kolera hen
-15 kolera 
-10 kolera drn
- 9 sidste epidemi
- 9 kolera i
- 9 kolera d
-.DE
+Trigrams starting with \fIkolera er\fP or \fIcholera er\fP (\(lqkolera\(rq or \(lqcholera\(rq followed by \(lqis\(rq) in English).
+These are constructs like \fIcholera er udbrudt\fP (\(lqcholera is broken out\(rq),
+\fIcholera er fra\fP (\(lqcholera is from\(rq) etc.
+See Figure 5.
+.IP 3.
+Trigrams starting with \fIkolera har\fP or \fIcholera har\fP (\(lqkolera\(rq or \(lqcholera\(rq followed by \(lqhas\(rq) in English).
+The words following \fIhar\fP (i.e., \(lqhas\(rq) is similar to those follwing \(lqcholera is\(rq.
+After all they are both conjugations of the same verb \fIhave\fP;
+\(lqhas\(rq is still present tense just like \(lqis\(rq but the cholera has been going on for a while when using \(lqhas\(rq.
+For instance, we have \fIcholera har hersket\fP (\(lqcholera has ruled\(rq) as opposed to the \(lqcholera is broken out\(rq as mentioned in point 2 above. See Figure 6.
+.IP 4.
+Finally, trigrams starting with \fIkolera havde\fP or \fIcholera havde\fP (\(lqkolera\(rq or \(lqcholera\(rq followed by \(lqhad\(rq) in English).
+One example is \fIcholera havde vist\fP, i.e., \(lqcholera had shown\(rq.
+There are only handful words following this past tense construct of the verb \fIhave\fP.
+They only appear in five of the ten years I have in my time series.
+Since the numbers are so low, I am hesitant to draw any conclusions upon the set of words here.
+However, only one occurence of \fIcholera havde\fP is before 1853, in 1849.
+The rest of them  are in 1853, 1854, 1855 and 1856 (See Figure 7).
+The \fIcholera havde\fP constructs seem to be discussions on why things happened as they did in 1853 as in this text
+.QP
+Saavel paa St. Thomas som paa St. Croix vedligholdtes streng Karantæne,
+och intet Tilfælde af \fBKolera havde vist\fP sig paa nogen av Øerne.\**
+.FS
+http://hdl.handle.net/109.3.1/uuid:dd96317c-bf59-463f-9e63-01ce718ae521
+.FE
+.IP
+(On St. Thomas as well as on St. Croix there was stringent quarantine, and no cases were encountered on the islands.)
 .DS L
 .so cholera_i.ms
 .br
