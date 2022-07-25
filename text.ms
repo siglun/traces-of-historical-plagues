@@ -205,43 +205,50 @@ och intet Tilfælde af \fBKolera havde vist\fP [authors emphasis] sig paa nogen a
 .pdfhref W -D http://hdl.handle.net/109.3.1/uuid:dd96317c-bf59-463f-9e63-01ce718ae521 http://hdl.handle.net/109.3.1/uuid:dd96317c-bf59-463f-9e63-01ce718ae521
 .FE
 (On St. Thomas as well as on St. Croix there was stringent quarantine, and no cases were encountered on the islands.)
+.PP
+The author of the text can thus preclude the contacts with the Danish West Indies as a source of the disease.
+The temporal distribution of the \fIcholera havde\fP constructs corroborates the conclusion above for the time series shown in Figures 1 and 3.
+People were talking a lot about Cholera 1853 and many years thereafter.
 .bp
 .DS L
 .so cholera_i.ms
-.br
+.DE
+.IP
 .ps 10
 .vs 12
 Figure 4.
 Trigrams per year with the text begining with \f(CRcholera i\fP.
-The highest bar is slightly massaged.
-I removed repetions and incomprehensible OCR errors in order to make it fit into the page.
-.DE
+The highest bar is truncated, in reality it is ten times higher in order to make it fit into the page.
+I have also removed many repetions.
+.bp
 .DS L
 .so cholera_er.ms
-.br
+.DE
+.IP
 .ps 10
 .vs 12
 Figure 5.
 Trigrams per year with the text begining with \f(CRcholera er\fP.
-The highest bar is slightly massaged.
-I removed repetions and incomprehensible OCR errors in order to make it fit into the page.
-.DE
+The highest bar is truncated, in reality it is ten times higher in order to make it fit into the page.
+I have also removed many repetions.
+.bp
 .DS L
 .so cholera_har.ms
-.br
+.DE
+.IP
 .ps 10
 .vs 12
 Figure 6.
 Trigrams per year with the text begining with \f(CRcholera har\fP.
-.DE
+.bp
 .DS L
 .so cholera_havde.ms
-.br
+.DE
+.IP
 .ps 10
 .vs 12
 Figure 7.
 Trigrams per year with the text begining with \f(CRcholera havde\fP.
-.DE
 .bp
 .SH 
 Lessons learned
