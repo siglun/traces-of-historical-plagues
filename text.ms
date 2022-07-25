@@ -212,10 +212,10 @@ The author of the text can thus preclude the contacts with the Danish West Indie
 The temporal distribution of the \fIcholera havde\fP constructs corroborates the conclusion above for the time series shown in Figures 1 and 3.
 People were talking a lot about Cholera 1853 and many years thereafter, just as we do now in relation to Covid.
 .bp
-.DS L
-.so cholera_i.ms
-.DE
 .IP
+.\"DS L
+.so cholera_i.ms
+.\"DE
 .ps 10
 .vs 12
 Figure 4.
@@ -223,10 +223,10 @@ Trigrams per year with the text begining with \f(CRcholera i\fP.
 The highest bar is truncated, in reality it is ten times higher in order to make it fit into the page.
 I have also removed many repetions.
 .bp
-.DS L
-.so cholera_er.ms
-.DE
 .IP
+.\"DS L
+.so cholera_er.ms
+.\"DE
 .ps 10
 .vs 12
 Figure 5.
@@ -234,19 +234,19 @@ Trigrams per year with the text begining with \f(CRcholera er\fP.
 The highest bar is truncated, in reality it is ten times higher in order to make it fit into the page.
 I have also removed many repetions.
 .bp
-.DS L
-.so cholera_har.ms
-.DE
 .IP
+.\"DS L
+.so cholera_har.ms
+.\"DE
 .ps 10
 .vs 12
 Figure 6.
 Trigrams per year with the text begining with \f(CRcholera har\fP.
 .bp
-.DS L
-.so cholera_havde.ms
-.DE
 .IP
+.\"DS L
+.so cholera_havde.ms
+.\"DE
 .ps 10
 .vs 12
 Figure 7.
