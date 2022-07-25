@@ -8,6 +8,9 @@
 gnuplot < plot.gp
 gnuplot < plot_weekly.gp
 
+ps2pdf  -dEPSCrop  articles_by_year.eps
+ps2pdf  -dEPSCrop  words_by_week.eps
+
 # ./make_trigrams.s
 
 ./plot_cholera_in > cholera_i.ms
@@ -17,7 +20,6 @@ gnuplot < plot_weekly.gp
 
 ./trigrams_to_bar_diagram > dia.ms
 
-groff -ms -U -s  -p  -P-pa4 -Tps parameters.ms text.ms parameters2.ms dia.ms > bar_diagram.ps
-groff -ms -U -s -p  -P-pa4 -Tps parameters.ms text.ms parameters2.ms > paper_only.ps
-ps2pdf  bar_diagram.ps
-ps2pdf  paper_only.ps
+groff -ms  -m pdfpic -m pdfmark   -U -s  -p  -P-pa4 -Tpdf  parameters.ms text.ms parameters2.ms dia.ms > bar_diagram.pdf
+groff -ms   -m pdfpic -m pdfmark  -U -s -p  -P-pa4 -Tpdf parameters.ms text.ms parameters2.ms > paper_only.pdf
+

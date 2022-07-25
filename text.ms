@@ -16,7 +16,7 @@ My hope was to find patterns of change in language use mirroring sentiments and 
 My first impulse was to analyze the Spanish flu 1918, but since we have as yet little data in our public corpora from that period I turned my attention to the Cholera epidemic in Copenhagen 1853.
 At the time, Copenhagen had around 130.000\**
 .FS
-http://www2.kb.dk/udstillinger/medhist/kolera/koebenhavn1853.htm
+.pdfhref W -D http://www2.kb.dk/udstillinger/medhist/kolera/koebenhavn1853.htm http://www2.kb.dk/udstillinger/medhist/kolera/koebenhavn1853.htm
 .FE
 inhabitants out of which 7.219 were diagnosed as having the disease out of which 4.737 (56,7%) died.
 Christian Molbech writes in a letter to Christian Knud Frederik Molbech, the July 3, 1853:
@@ -39,27 +39,27 @@ the 25th. The authorities were able to conceal the earliest few cases
 for a fortnight.\**
 .FS
 Translated by the author.
-https://bit.ly/3cOzlAg
+.pdfhref W -D https://bit.ly/3cOzlAg https://bit.ly/3cOzlAg
 .\" https://danmarksbreve.kb.dk/catalog/%2Fletter_books%2F001991706%2F001991706_000-L0019917060000027
 .FE
 .IP
-.PSPIC "articles_by_year.eps"  12c
+.PDFPIC "articles_by_year.pdf"  12c
 .ps 10
 .vs 12
 Figure 1. Number of newspaper pages mentioning any of the words \fIkolera, cholera, epidemi\fP or \fIpest\fP.
 .LP
 The epidemic spread from Copenhagen to other areas. Outside the capital 1.951 fatal cases were reported.\**
 .FS
-https://da.wikipedia.org/wiki/Koleraepidemien_i_K%C3%B8benhavn_1853
+.pdfhref W -D https://da.wikipedia.org/wiki/Koleraepidemien_i_K%C3%B8benhavn_1853 https://da.wikipedia.org/wiki/Koleraepidemien_i_K%C3%B8benhavn_1853
 .FE
 .PP
 The spread of an infectious disease does not occur in a vacuum; the Copenhagen epidemic is a part of the cholera pandemic (1846-1860)\**
 .FS
-https://en.wikipedia.org/wiki/1846%E2%80%931860_cholera_pandemic
+.pdfhref W -D https://en.wikipedia.org/wiki/1846%E2%80%931860_cholera_pandemic https://en.wikipedia.org/wiki/1846%E2%80%931860_cholera_pandemic
 .FE
 which is the third out of seven global outbreaks.\**
 .FS
-https://en.wikipedia.org/wiki/Cholera_outbreaks_and_pandemics
+.pdfhref W -D https://en.wikipedia.org/wiki/Cholera_outbreaks_and_pandemics https://en.wikipedia.org/wiki/Cholera_outbreaks_and_pandemics
 .FE
 .PP
 Here I present some data analyses: (1) The number of newspaper articles mentioning \fIepidemi, pest, kolera\fP and \fIcholera\fP through the period 1846 to 1860 (Figure 1).
@@ -71,7 +71,8 @@ The data
 The data was retrieved from Royal Danish Library's LOAR Repository.\** It comes in csv format, aggregated to yearly chunks.
 Each line is basically corresponding to one page of text in the newspaper.
 .FS
-Newspapers from Royal Danish Library https://loar.kb.dk/handle/1902/157
+Newspapers from Royal Danish Library
+.pdfhref W -D https://loar.kb.dk/handle/1902/157 https://loar.kb.dk/handle/1902/157
 .FE
 .SH
 Some low-hanging fruits
@@ -118,7 +119,7 @@ From what I can tell it continues until the beginning of October, but the mentio
 There is a discrepancy between the two analyses,
 in that the article level analyses (Figure 1) implies a longer effect of the outbreak on the discourse than the per word one (Figure 3.)
 .IP
-.PSPIC "words_by_week.eps"  12c
+.PDFPIC "words_by_week.pdf"  12c
 .ps 10
 .vs 12
 Figure 3. Here I use tokenized text, i.e., there is only one word per line, and I also aggregated the texts by week.
@@ -128,13 +129,13 @@ Bigrams and trigrams
 N-grams generation is not an end in itself.
 They are a starting point for many kinds of statistical and machine learning methods and applications in natural language processing.\**
 .FS
-https://en.wikipedia.org/wiki/N-gram
+.pdfhref W -D https://en.wikipedia.org/wiki/N-gram https://en.wikipedia.org/wiki/N-gram
 .FE
 You extract n-grams by "sliding" through your tokenized text word by word, and sample n words.
 Bigrams and trigrams are special cases where you sample two or three words.
 I am a great fan of simplicity and elegance and hence I love Kenneth Ward Church's tool box which he described in his wonderful classic \fIUnix for Poets\fP\** where you are given methods to do a text analyses using simple tools that you find on all Unix/Linux machines.
 .FS
-http://doc.cat-v.org/unix/for-poets/
+.pdfhref W -D http://doc.cat-v.org/unix/for-poets/ http://doc.cat-v.org/unix/for-poets/
 .FE
 Here are some examples of trigrams containg the word \fIhovedstaden\fP across the weeks, i.e., the capital (in decreasing frequency):
 .ID
@@ -193,15 +194,18 @@ They only appear in five of the ten years I have in my time series.
 Since the numbers are so low, I am hesitant to draw any conclusions upon the set of words here.
 However, only one occurence of \fIcholera havde\fP is before 1853, in 1849.
 The rest of them  are in 1853, 1854, 1855 and 1856 (See Figure 7).
+.LP
 The \fIcholera havde\fP constructs seem to be discussions on why things happened as they did in 1853 as in this text
 .QP
+.ps 10
+.vs 12
 Saavel paa St. Thomas som paa St. Croix vedligholdtes streng Karantæne,
-och intet Tilfælde af \fBKolera havde vist\fP sig paa nogen av Øerne.\**
+och intet Tilfælde af \fBKolera havde vist\fP [authors emphasis] sig paa nogen av Øerne.\**
 .FS
-http://hdl.handle.net/109.3.1/uuid:dd96317c-bf59-463f-9e63-01ce718ae521
+.pdfhref W -D http://hdl.handle.net/109.3.1/uuid:dd96317c-bf59-463f-9e63-01ce718ae521 http://hdl.handle.net/109.3.1/uuid:dd96317c-bf59-463f-9e63-01ce718ae521
 .FE
-.IP
 (On St. Thomas as well as on St. Croix there was stringent quarantine, and no cases were encountered on the islands.)
+.bp
 .DS L
 .so cholera_i.ms
 .br
@@ -238,6 +242,7 @@ Trigrams per year with the text begining with \f(CRcholera har\fP.
 Figure 7.
 Trigrams per year with the text begining with \f(CRcholera havde\fP.
 .DE
+.bp
 .SH 
 Lessons learned
 .IP 1
@@ -248,7 +253,7 @@ The tools coming with a standard Linux distribution isn't as unicode compliant o
 Some twenty years later, the nice utility \f(CRtr\fP is still not really UTF-8.
 Neither is the GNU implementation of Brian Kernighans graphics language \f(CRpic\fP which I used for the bigrams.
 .FS
-https://en.wikipedia.org/wiki/Pic_language
+.pdfhref W -D https://en.wikipedia.org/wiki/Pic_language https://en.wikipedia.org/wiki/Pic_language
 .FE
 .IP 3
 There is another big problem connected with the use of our newspaper text corpora for computational linguisics.
