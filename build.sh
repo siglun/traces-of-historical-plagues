@@ -20,6 +20,6 @@ ps2pdf  -dEPSCrop  words_by_week.eps
 
 ./trigrams_to_bar_diagram > dia.ms
 
-groff -ms  -m pdfpic -m pdfmark   -U -s  -p  -P-pa4 -Tpdf  parameters.ms text.ms parameters2.ms dia.ms > bar_diagram.pdf
+groff -ms  -m pdfpic -m pdfmark   -U -s  -p  -P-pa4 -Tpdf  parameters.ms text.ms appendix.ms   parameters2.ms dia.ms > bar_diagram.pdf
 groff -ms   -m pdfpic -m pdfmark  -U -s -p  -P-pa4 -Tpdf parameters.ms text.ms parameters2.ms > paper_only.pdf
 

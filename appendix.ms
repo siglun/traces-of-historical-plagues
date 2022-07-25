@@ -1,5 +1,5 @@
-.IP 5.
-of bigrams containing any of the words \fIepidemi, kolera\fP or \fIcholera\fP.
+.SH
+Appendix: Bigrams containing any of the words \fIepidemi, kolera\fP or \fIcholera\fP.
 .LP
 The bigrams are shown as bars in a set of bar diagrams, one diagram per eight weeks interval.
 It comprises about a year, from 1853-05-27 (my week 386) to 1854-05-06 (my week 435).

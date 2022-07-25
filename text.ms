@@ -145,7 +145,7 @@ in that the article level analyses (Figure 1) implies a longer effect of the out
 .vs 12
 Figure 3. Here I use tokenized text, i.e., there is only one word per line, and I also aggregated the texts by week.
 .SH
-Bigrams and trigrams
+Trigrams
 .LP
 N-grams generation is not an end in itself.
 They are a starting point for many kinds of statistical and machine learning methods and applications in natural language processing.\**
