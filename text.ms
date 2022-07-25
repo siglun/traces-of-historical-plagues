@@ -1,9 +1,8 @@
 .TL
 .hy 0
 .nf
-The Copenhagen cholera epidemics 1853 in contemporary
+The Copenhagen cholera epidemic 1853 in contemporary
 Danish newspaper prose: Some back-of-an-envelope calculations
-made during April 2020
 .AU
 Sigfrid Lundberg
 .AI
@@ -11,9 +10,12 @@ The Royal Danish Library
 .SH
 Introduction
 .LP
-Inspired by the fact that we are all hiding away from the Covid-19 I wanted to take a closer look at some other epidemic.
+Inspired by the fact that we were all hiding away from the Covid-19 2020\(en2021 I wanted to take a closer look at some other epidemic.
+I started to write this May 2020 and completed it about two years later.
 My hope was to find patterns of change in language use mirroring sentiments and attitudes expressed in words, bigrams and trigrams and frequency distributions.
-My first impulse was to analyze the Spanish flu 1918, but since we have as yet little data in our public corpora from that period I turned my attention to the Cholera epidemic in Copenhagen 1853.
+My first impulse was to analyze the Spanish flu 1918 since my I have a personal relation to that outbreak,
+since my grandfather died in it which affected everything that followed in my family's history.
+We have as yet little freely available data in our public corpora from that period, so I turned my attention to the Cholera epidemic in Copenhagen 1853.
 At the time, Copenhagen had around 130.000\**
 .FS
 .pdfhref W -D http://www2.kb.dk/udstillinger/medhist/kolera/koebenhavn1853.htm http://www2.kb.dk/udstillinger/medhist/kolera/koebenhavn1853.htm
@@ -42,11 +44,6 @@ Translated by the author.
 .pdfhref W -D https://bit.ly/3cOzlAg https://bit.ly/3cOzlAg
 .\" https://danmarksbreve.kb.dk/catalog/%2Fletter_books%2F001991706%2F001991706_000-L0019917060000027
 .FE
-.IP
-.PDFPIC "articles_by_year.pdf"  12c
-.ps 10
-.vs 12
-Figure 1. Number of newspaper pages mentioning any of the words \fIkolera, cholera, epidemi\fP or \fIpest\fP.
 .LP
 The epidemic spread from Copenhagen to other areas. Outside the capital 1.951 fatal cases were reported.\**
 .FS
@@ -64,7 +61,12 @@ which is the third out of seven global outbreaks.\**
 .PP
 Here I present some data analyses: (1) The number of newspaper articles mentioning \fIepidemi, pest, kolera\fP and \fIcholera\fP through the period 1846 to 1860 (Figure 1).
 (2) I repeated that analysis with the frequencies of words rather than articles in weekly aggregations of texts.
-(3) Finally I visualize a set of bigrams extracted from the corpus.
+(3) Finally I visualize a set of trigrams extracted from the corpus.
+.IP
+.PDFPIC "articles_by_year.pdf"  12c
+.ps 10
+.vs 12
+Figure 1. Number of newspaper pages mentioning any of the words \fIkolera, cholera, epidemi\fP or \fIpest\fP.
 .SH
 The data
 .LP
@@ -208,7 +210,7 @@ och intet Tilfælde af \fBKolera havde vist\fP [authors emphasis] sig paa nogen a
 .PP
 The author of the text can thus preclude the contacts with the Danish West Indies as a source of the disease.
 The temporal distribution of the \fIcholera havde\fP constructs corroborates the conclusion above for the time series shown in Figures 1 and 3.
-People were talking a lot about Cholera 1853 and many years thereafter.
+People were talking a lot about Cholera 1853 and many years thereafter, just as we do now in relation to Covid.
 .bp
 .DS L
 .so cholera_i.ms
