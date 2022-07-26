@@ -8,6 +8,7 @@ Sigfrid Lundberg
 .AI
 The Royal Danish Library
 .AB
+.LP
 .ps 10
 .vs 12
 A tentative analysis of how the cholera epidemic 1853 is covered in contemporary Danish newspapers.
