@@ -1,6 +1,6 @@
 # traces-of-historical-plagues
 
-The take-home message is in the PDF with the odd name [bar_diagram.pdf](bar_diagram.pdf)
+The take-home message is in the PDF with the odd name [paper_only.pdf](paper_only.pdf). There is another version which also contain a some ten pages with bar diagrams [bar_diagram.pdf](bar_diagram.pdf).
 
 Everything here is as is, thoughts came and were investigated,
 rejected or included in the small note.
